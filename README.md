@@ -1,9 +1,9 @@
 AvancaDev
 
-<p align="center"><strong>Desafio 02 - Microsserviços se comunicando utilizando filas</strong></p>
+<p align="center"><strong>Desafio 02 - Microsserviços se comunicando utilizando filas com RappidMQ</strong></p>
 
 <a id="in"></a>
-### Cupom inválido
+### Invalid Coupon
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="AvancaDev" title="#AvancaDev" src="./Screenshots/InvalidCoupon.png" width="1080px">
