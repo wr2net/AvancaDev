@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  microservicoa:
+    image: wr2net/microsservico-avancadev-a:latest
+    ports:
+      - 9090:9090
+
+  microservicob:
+    image: wr2net/microsservico-avancadev-b:latest
+    ports:
+      - 9091:9091
+
+  microservicoc:
+    image: wr2net/microsservico-avancadev-c:latest
+    ports:
+      - 9092:9092
+
+  rabbit:
+    image: "rabbitmq:3-management"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - "15672:15672"
+      - "5672:5672"

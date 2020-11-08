@@ -49,9 +49,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 	jsonResult, err := json.Marshal(result)
 	if err != nil {
-		log.Fatal("Error converting json")
+		log.Fatal("Failed in converting json")
 	}
 
 	fmt.Fprintf(w, string(jsonResult))
-
 }
